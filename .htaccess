@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /micro/
+RewriteRule . micro.php [QSA,L]
