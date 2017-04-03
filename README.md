@@ -57,3 +57,14 @@ design pattern is right for _your_ project.  With a few short lines and a little
 you can easily make a system that solves most all problems you might have.  Yes, you can have middleware, 
 just write it yourself.  Yes, you can inject dependencies, just build a relevant container.  All very 
 simple stuff.  Do it yourself so you know how each bit of your code works.
+
+
+
+### Practical Use Notes
+
+This has actually been a very useful little tool that has found itself into numerous projects where 
+rapid development and good long-term maintainability by being able to know easily determine what the
+code does are key points of the project.  Even people who have long been fans of other frameworks and 
+tools are easy to get onboard.  Some of the reasons for this are there are no dependencies, you have
+to really understand what the code does, you have great freedom to make the code exactly what you want
+it to be, and it is so simple there is no clutter and nothing that you don't know how or why it works.  
