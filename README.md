@@ -5,7 +5,7 @@ that cleaves some functionality but leaves you with a perfectly good loader, rou
 handler that includes headers, all in less than 60 lines and 1250 bytes (the Mini framework was just 
 too much)!  And that is with really, really fluffy formatting.  This is just another go at making 
 writing PHP code simpler and faster to deploy when you have to touch the stuff (New slogan: "PHP: Because 
-sometimes you just have to").  Minimal is the way to go.  
+sometimes you just have to.").  Minimal is the way to go!
 
 To use this, first clone the project.  Update the `.htaccess` as needed to meet the needs
 of your base project.  Add your own handlers in one or more directories.  What tends to be handy is to put
