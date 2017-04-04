@@ -68,3 +68,10 @@ code does are key points of the project.  Even people who have long been fans of
 tools are easy to get onboard.  Some of the reasons for this are there are no dependencies, you have
 to really understand what the code does, you have great freedom to make the code exactly what you want
 it to be, and it is so simple there is no clutter and nothing that you don't know how or why it works.  
+
+You can always take it or leave it with some the (scant) features.  If you are writing a JSON API then
+you can dispense with the header stuff altogether and just send a static header.  This will save you some
+time, LOC and complexity.  It has proven to be a good and quick starting point for a lot of applications
+with varying complexity from simple to modest.  If you are clever with your route implementation then
+you could even use it for a fairly complex application.  Be in control of your own code and write it from
+the ground up!
