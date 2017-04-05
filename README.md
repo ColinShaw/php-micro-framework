@@ -62,16 +62,21 @@ simple stuff.  Do it yourself so you know how each bit of your code works.
 
 ### Practical Use Notes
 
+You can always take it or leave it with some the (scant) features.  If you are writing a JSON API then
+you can dispense with the header stuff altogether and just send a static header.  This will save you some
+time, LOC and complexity.  It has proven to be a good and quick starting point for a lot of applications
+with varying complexity from simple to modest.  If you are clever with your route implementation then
+you could even use it for a fairly complex application.  
+
+If you are needing to produce templated HTML, you might consider using a templating package like 
+[Mustache](https://mustache.github.io/) or similar.  Or you might recall that PHP itself is a templating
+language.  Sure, sure, maybe you don't like the syntax, but your code really should depend on templating
+that much anyway, so just get off it.  If you do need templating, it is a snap to include this type of 
+content and change the headers appropriately.
+
 This has actually been a very useful little tool that has found itself into numerous projects where 
 rapid development and good long-term maintainability by being able to know easily determine what the
 code does are key points of the project.  Even people who have long been fans of other frameworks and 
 tools are easy to get onboard.  Some of the reasons for this are there are no dependencies, you have
 to really understand what the code does, you have great freedom to make the code exactly what you want
 it to be, and it is so simple there is no clutter and nothing that you don't know how or why it works.  
-
-You can always take it or leave it with some the (scant) features.  If you are writing a JSON API then
-you can dispense with the header stuff altogether and just send a static header.  This will save you some
-time, LOC and complexity.  It has proven to be a good and quick starting point for a lot of applications
-with varying complexity from simple to modest.  If you are clever with your route implementation then
-you could even use it for a fairly complex application.  Be in control of your own code and write it from
-the ground up!
