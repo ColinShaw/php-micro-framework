@@ -72,7 +72,10 @@ If you are needing to produce templated HTML, you might consider using a templat
 [Mustache](https://mustache.github.io/) or similar.  Or you might recall that PHP itself is a templating
 language.  Sure, sure, maybe you don't like the syntax, but your code really should depend on templating
 that much anyway, so just get off it.  If you do need templating, it is a snap to include this type of 
-content and change the headers appropriately.
+content and change the headers appropriately.  What's more, you can very easily adapt this to being an
+intelligent asset control system.  Very minimal development needed for this, and you get a lot of benefits
+that are curiously not found in almost any of the large PHP frameworks, some of the old `asset()` wrapping
+in Laravel and Symfony's `Ascetic` being about the only things that had this.
 
 This has actually been a very useful little tool that has found itself into numerous projects where 
 rapid development and good long-term maintainability by being able to know easily determine what the
