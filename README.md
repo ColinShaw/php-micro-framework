@@ -75,7 +75,7 @@ that much anyway, so just get off it.  If you do need templating, it is a snap t
 content and change the headers appropriately.  What's more, you can very easily adapt this to being an
 intelligent asset control system.  Very minimal development needed for this, and you get a lot of benefits
 that are curiously not found in almost any of the large PHP frameworks, some of the old `asset()` wrapping
-in Laravel and Symfony's `Ascetic` being about the only things that had this.
+in Laravel and Symfony's `Ascetic` being about the only things that have this.
 
 This has actually been a very useful little tool that has found itself into numerous projects where 
 rapid development and good long-term maintainability by being able to know easily determine what the
@@ -83,3 +83,20 @@ code does are key points of the project.  Even people who have long been fans of
 tools are easy to get onboard.  Some of the reasons for this are there are no dependencies, you have
 to really understand what the code does, you have great freedom to make the code exactly what you want
 it to be, and it is so simple there is no clutter and nothing that you don't know how or why it works.  
+
+In one environment where we use this, we have a great system that expands on this basic idea, adding 
+templated templates, automatic CSRF synchronization tokens, a cache-busting mechanism based on 
+the git branch so that tagged releases automatically force reload of the more brittle assets, some
+very convenient base classes to subclass for implementation, and other stuff.  A person can take the
+base project, configure it, and have functioning code with interface and backend elements in about 5 
+minutes.  That's right, functioning for both sides in under 5 minutes.  With no unusual binary 
+dependencies, minimal configuration, and minimal code.  The variant of the framework that does all 
+this is right at 400 lines and less than 10k.  
+
+If you ever look at my other repositories, you may note that I generally go completely off on PHP 
+since it is an inconsistent and basically crappy language, the code one sees in the community 
+is generally not just bad, the habits formed with people who use it are bad, etc.  I mean, it really 
+is just the worst.  But the fact is, there is a lot of dreary legacy code that has been written in
+PHP, a lot of infrastructure that is centered around PHP, and it is not often realistic to move off 
+it so much as incrementally improve it.  Making a thoughtful, simple collection of tools that meet 
+the needs of requirements can help make the best of the situation.
