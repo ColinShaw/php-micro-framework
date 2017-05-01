@@ -99,4 +99,5 @@ is generally not just bad, the habits formed with people who use it are bad, etc
 is just the worst.  But the fact is, there is a lot of dreary legacy code that has been written in
 PHP, a lot of infrastructure that is centered around PHP, and it is not often realistic to move off 
 it so much as incrementally improve it.  Making a thoughtful, simple collection of tools that meet 
-the needs of requirements can help make the best of the situation.
+the needs of requirements can help make the best of the situation.  It is unbelievable the amount 
+of times people do not adhere to this simple idea!
