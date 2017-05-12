@@ -101,3 +101,36 @@ PHP, a lot of infrastructure that is centered around PHP, and it is not often re
 it so much as incrementally improve it.  Making a thoughtful, simple collection of tools that meet 
 the needs of requirements can help make the best of the situation.  It is unbelievable the amount 
 of times people do not adhere to this simple idea!
+
+
+
+### Making It Better 
+
+One way to make this better in some applications is to strip down the classes that you are writing. This
+is basically the approach of Jack Diederich in his presentation [Stop Writing Classes](https://youtu.be/o9pEzgHorH0).  I
+would highly recommend checking it out, as he is quite on point regarding overuse of object oriented
+design when what you are actually doing is simply organization.  
+
+One of the easiest ways to start this transition is to get out of the Sinatra style routing and into
+the class-method mapping style routing.  That is, if your applications succinctly can be written with 
+endpoints that are methods in a class, then you can avoid all of the custom routes and instead use a 
+much simpler route and resolve the route to class methods.  Such a route might be something along the 
+lines of `/(\S+)\/(\S+)$/i`.  When I have done this, I also remove all hyphen and underscore characters
+so that human language can be used in a slug-like URL that still resolves properly to the relevant class
+and method.  This is generally more of a class naming issue than a method naming issue.  
+
+Having moved to this style route, you can dramatically simplify the basic routing conventions, as you no
+longer need to add your own.  The entry point is now just and include and an object invocation.  The default 
+routes can all fall under the same class-method mapping and reduce that complexity significantly.  Most of 
+the logic you might add having to do with user authentication, dealing with synchronization tokens, etc.,
+can be pulled into your single framework class.  The context of the main class can be injected to any 
+action method easily by parameterizing it with the main framework's `$this` context.  
+
+Doing this brought our working framework from about 12 classes and 450 LOC to 2 meaningful classes and about 
+200 LOC.  Needless to say, this is simpler (a good thing), shorter (a good thing), and also has the 
+benefit of being more consistent (a good thing).  If you have looked at the various versions of this framework
+evolve in the couple repos I have devoted to it, you will note that with a couple files that are extremely 
+simple to maintain, and at this point with around 200 LOC, more practical, useful stuff is getting done than 
+in a wide swath of "small" frameworks that are 20 times the size.  Roll your own, learn the lessons, reap
+the benefits.  Perhaps one day I will make a repo with the variant of this framework that this has finally come 
+to be.
