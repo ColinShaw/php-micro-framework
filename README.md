@@ -132,5 +132,8 @@ benefit of being more consistent (a good thing).  If you have looked at the vari
 evolve in the couple repos I have devoted to it, you will note that with a couple files that are extremely 
 simple to maintain, and at this point with around 200 LOC, more practical, useful stuff is getting done than 
 in a wide swath of "small" frameworks that are 20 times the size.  Roll your own, learn the lessons, reap
-the benefits.  Perhaps one day I will make a repo with the variant of this framework that this has finally come 
+the benefits.  I have converted even the most staunch proponent of the more common frameworks when it is realized 
+with what ease rolling your own really is, and what level of customization it gives you.  Do this.  
+
+Perhaps one day I will make a repo with the variant of this framework that this has finally come 
 to be.
